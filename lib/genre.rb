@@ -16,9 +16,8 @@ class Genre
     Song.all.select {|song| song.genre == self}
   end
 
-  def artist
-    artists = []
-    @songs.each {|song| artists << song.artist}
+  def artists
+    self.songs.collect { |song| song.artist }
   end
 
   def add_song(song)
