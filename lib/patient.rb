@@ -6,4 +6,8 @@ class Patient
   def self.all #class method that lists each partient in the class variable
     @@all
   end
+
+  def new_appointment(doctor, date)
+    
+  end
 end
