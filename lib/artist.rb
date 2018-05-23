@@ -23,7 +23,6 @@ class Artist
   end
 
   def genres
-    genres = []
-    self.songs.each {|song| genre << song.genre}
+    self.songs.collect { |song| song.genre }
   end
 end
