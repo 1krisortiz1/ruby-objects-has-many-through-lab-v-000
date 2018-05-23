@@ -3,10 +3,11 @@ class Song
 
     @@all = []
 
-  def initialize(name, genre)
+  def initialize(name, artist, genre)
     @name = name
     @genre = genre
-    @genre.add_song(self)
+    @artist = artist
+    @@all << self
 end
 
 def self.all
