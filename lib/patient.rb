@@ -1,5 +1,6 @@
 class Patient
   attr_accessor :name
+
   @@all = []  #class variable that begins as an empty array
 
 
